@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/style.css" rel="stylesheet"  type="text/css">
+    <title>My biography</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li class="bold"><a href="/about.html">About</a></li>
+                <li><a href="/games.html">Games</a></li>
+                <li><a href="/websites/Tasha/templates/main.html">Websites</a></li>
+                <li><a href="/questions.html">Questions</a></li>
+            </ul>
+            <ul>
+                <li><a href="/">Kasapchuk</a></li>
+                <li class="hideOnMobile bold"><a href="/about.html">About</a></li>
+                <li class="hideOnMobile"><a href="/games.html">Games</a></li>
+                <li class="hideOnMobile"><a href="/websites.html">Websites </a></li>
+                <li class="hideOnMobile"><a href="/questions.html">Questions</a></li>
+                <li class="menu" onclick=showSideBar()><svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function showSideBar() { 
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex"
+        }
+        function hideSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none"
+        }
+    </script>
+    <main class="main-about">
+        
+    </main>
+    <footer class="footer">
+        <section>
+            <b>Мої контакти:</b>
+            <article>
+                <a href='https://www.instagram.com/_kapchyk_/?next=%2F'><img src="/static/images/insta.png" style="width:60px;height:60px;border-radius: 10px;"></a>
+                <a href="https://web.telegram.org/k/#@Sashapre228"><img src="/static/images/tg.png"style="width:60px;height:60px;border-radius: 10px;"></a>
+            </article>
+        </section>  
+    </footer>
+</body>
+</html>
